@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Completo con Contenedores y Fuentes Personalizadas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+    </style>
+  </head>
+  <body class="bg-gray-100 p-8">
+    <!--Contenedor Principal-->
+    <div class="container mx-auto max-w-4xl p-8 shadow-lg">
+      <!--Título-->
+      <h1 class="text-center text-4xl text-blue-600 md:text-5xl lg:text-6xl">Diseño Web con Tailwind CSS</h1>
+      <!--Sección Lobster y Sección Roboto-->
+      <div class="mb-6 mt-6 md:flex md:space-x-8">
+        <!--Sección Lobster-->
+        <div class="md:w-1/2">
+          <h2 class="mb-4 text-2xl text-red-500 md:text-3xl lg:text-4xl">Sección Lobster</h2>
+          <p class="text-base md:text-lg lg:text-xl" style="font-family: 'Lobster'">Este párrafo utiliza la fuente Lobster, una fuente cursiva que da un toque creativo al texto. Puedes personalizar aún más las fuentes importando diferentes estilos desde Google Fonts.</p>
+        </div>
+        <!--Sección Roboto-->
+        <div class="md:w-1/2">
+          <h2 class="mb-4 text-2xl text-green-500 md:text-3xl lg:text-4xl">Sección Roboto</h2>
+          <p class="text-base md:text-lg lg:text-xl" style="font-family: 'Roboto'">Este párrafo usa la fuente Roboto, una de las fuentes sans-serif más populares para el diseño web moderno. Es clara y legible en varios tamaños de pantalla.</p>
+        </div>
+      </div>
+      <!--Sección Responsiva con Monospace-->
+      <div class="rounded-lg bg-gray-200 p-6">
+        <h2 class="mb-3 text-center font-sans text-3xl text-gray-900">Sección Responsiva con Monospace</h2>
+        <p class="font-mono text-sm text-gray-700 md:text-base lg:text-lg">Este es un ejemplo de cómo las fuentes Monospace pueden ser utilizadas para mostrar código o texto que necesita alinearse uniformemente. Además, el diseño es completamente responsivo. Redimensiona la ventana para ver cómo se ajusta el contenido.</p>
+      </div>
+    </div>
+  </body>
+</html>

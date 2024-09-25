@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts con Positions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container m-10 max-w-lg mx-auto rounded-xl border-2 border-red-300">
+        <!--Contenedor del componente de usuarios-->
+        <div class="w-full h-96">
+            <!--Contenedor de topbar de Contactos-->
+            <div class="w-full bg-slate-500 h-14 flex items-center">
+                <h2 class="text-white font-semibold font-sans text-base px-4">Contacts</h2>
+            </div>
+            <!-- Contenedor de contactos con scroll -->
+            <ul class="w-full h-80 overflow-y-auto">
+                <li class="bg-slate-700 h-20 p-2 flex items-center">
+                    <div class="w-16 h-16 ml-2">
+                        <img src="../Overflow/profile2.jpg" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-lg text-white font-sans">Hugo Flores</p>
+                    </div>
+                </li>
+                <li class="bg-slate-700 h-20 p-2 flex items-center">
+                    <div class="w-16 h-16 ml-2">
+                        <img src="../Overflow/profile1.jpg" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-lg text-white font-sans">Hugo Flores</p>
+                    </div>
+                </li>
+                <li class="bg-slate-700 h-20 p-2 flex items-center">
+                    <div class="w-16 h-16 ml-2">
+                        <img src="../Overflow/profile3.jpg" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-lg text-white font-sans">Hugo Flores</p>
+                    </div>
+                </li>
+                <li class="bg-slate-700 h-20 p-2 flex items-center">
+                    <div class="w-16 h-16 ml-2">
+                        <img src="../Overflow/profile4.jpg" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-lg text-white font-sans">Hugo Flores</p>
+                    </div>
+                </li>
+                <li class="bg-slate-700 h-20 p-2 flex items-center">
+                    <div class="w-16 h-16 ml-2">
+                        <img src="../Overflow/profile5.jpg" class="w-full h-full rounded-full object-cover">
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-lg text-white font-sans">Hugo Flores</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

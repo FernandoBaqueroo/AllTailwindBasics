@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colores de Fondo y Opacidad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-8">
+    <!-- Ejemplo de colores de fondo -->
+    <div class="grid grid-cols-2 gap-8 p-8 md:grid-cols-4">
+      <div class="rounded-lg bg-blue-500 p-6 text-white">
+        <h2 class="text-xl font-bold">Fondo Azul</h2>
+        <p>Este div tiene un fondo azul con texto blanco.</p>
+      </div>
+      <div class="rounded-lg bg-red-500 bg-opacity-75 p-6 text-white">
+        <h2 class="text-xl font-bold">Fondo Rojo con Opacidad</h2>
+        <p>Este div tiene un fondo rojo con 75% de opacidad.</p>
+      </div>
+      <div class="rounded-lg bg-green-500 bg-opacity-50 p-6 text-white">
+        <h2 class="text-xl font-bold">Fondo Verde con Opacidad</h2>
+        <p>Este div tiene un fondo verde con 50% de opacidad.</p>
+      </div>
+      <div class="rounded-lg bg-gradient-to-r from-red-500 to-blue-500 p-6 text-white">
+        <h2 class="text-xl font-bold">Fondo Rojo con Gradiente</h2>
+        <p>Este div tiene un fondo rojo con gradiente hacia azul.</p>
+      </div>
+    </div>
+  </body>
+</html>

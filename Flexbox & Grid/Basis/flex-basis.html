@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis, Grow y Shrink</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<!--! FLEX BASIS-->
+<!--? Esta propiedad establece el tamaño base desde la cual un elemento flex se dimensionará, y luego el espacio disponible se ajusta según el comportamiento definido por otras propiedades como grow y shrink-->
+
+<body class="bg-gray-100">
+    <div class="container mx-auto m-4">
+
+        <h2 class="pt-4 pb-4 text-2xl font-thin">Flex Basis sin Grow ni Shrink</h2>
+        <div class="bg-purple-300 flex justify-center items-center rounded-xl p-4 space-x-4">
+            <div class="bg-purple-950 rounded-xl text-white font-medium text-xl flex items-center justify-center basis-1/4 h-20">01</div>
+            <div class="bg-purple-950 rounded-xl text-white font-medium text-xl flex items-center justify-center basis-1/4 h-20">02</div>
+            <div class="bg-purple-950 rounded-xl text-white font-medium text-xl flex items-center justify-center basis-1/2 h-20">03</div>
+        </div>
+
+        <h2 class="pt-4 pb-4 text-2xl font-thin">Flex Basis con Grow y Shrink</h2>
+        <div class="bg-purple-300 flex justify-center items-center rounded-xl p-4 space-x-4 ">
+            <!--? Cubo 1 CON GROW (más alto) -->
+            <div class="bg-purple-950 rounded-xl text-white font-medium text-xl flex items-center justify-center w-14 h-20 grow">01</div>
+            <!--? Cubo 2 CON SHRINK (más pequeño) -->
+            <div class="bg-purple-950 rounded-xl text-white font-medium text-xl flex items-center justify-center w-64 h-20 shrink">02</div>
+            <!--? Cubo 3 CON SHRINK 0 -->
+            <div class="bg-purple-950 rounded-xl text-white font-medium text-xl flex items-center justify-center w-14 h-20 shrink-0">03</div>
+            <!--? Cubo 4 CON GROW 0 -->
+            <div class="bg-purple-950 rounded-xl text-white font-medium text-xl flex items-center justify-center w-14 h-20 grow-0">04</div>
+        </div>
+    </div>    
+</body>
+</html>

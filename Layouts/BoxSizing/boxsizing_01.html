@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts con Columns</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container mx-auto p-10">
+        <!--Display Block
+        Esta propiedad hace que un elemento se comporte como un bloque en el flujo
+        de un documento. Por lo que:
+
+        1.Ocupa toda la anchura disponible del contenedor
+        2. Empiezan en una nueva linea, debajo de otros elementos del bloque
+        3. Permite especificar las dimensiones
+        -->
+        <h1 class="text-4xl mb-2">Display Block</h1>
+        <div class="space-y-4 bg-blue-200 w-6/12 h-96 p-5">
+            <span class="bg-blue-500 h-1/6 block">1</span>
+            <span class="bg-blue-500 h-1/6 block">2</span>
+            <span class="bg-blue-500 h-1/6 block">3</span>
+        </div>
+
+        <hr class="my-10">
+
+        <!--Display InlineBlock
+        Esta propiedad hace que un elemento se comporte de una manera que combina
+        características de los elementos en línea y los elementos de bloque
+
+        1. Se alinea en línea, por lo que no inicia en una nueva línea como el block
+        2. Permite especificar las dimensiones
+        3. Respeta el espaciado y el margin
+
+        Es por esa razon que, tu en cada span le puedes dar el tamaño que quieras como
+        se puede veer en el ejemplo, además de que se alinean todos en la misma línea.
+        -->
+        <h1 class="text-4xl mb-2">Display Inline Block</h1>
+        <div class="space-x-4 bg-blue-200 w-6/12 h-20 p-5">
+            <span class="bg-blue-500 w-3/12 inline-block">1</span>
+            <span class="bg-blue-500 w-3/12 inline-block">2</span>
+            <span class="bg-blue-500 w-3/12 inline-block">3</span>
+        </div>
+
+        <hr class="my-10">
+
+        <!--Display Inline
+        Es igual que el Inline Block, pero no se pueden especificar los tamaños de los elementos que utiliza, solo los alinea en la misma línea
+        -->
+        <h1 class="text-4xl mb-2">Display Inline</h1>
+        <div class="space-x-4 bg-blue-200 w-6/12 h-20 p-5">
+            <span class="bg-blue-500 w-3/12 inline">1</span>
+            <span class="bg-blue-500 w-3/12 inline">2</span>
+            <span class="bg-blue-500 w-3/12 inline">3</span>
+        </div>
+        
+        <hr class="my-10">
+
+        <!--Display Table
+        Como las tablas en html, pero en tailwind
+        -->
+        <h1 class="text-4xl mb-2">Display table</h1>
+        <div class="table w-6/12 h-5/6 bg-red-200">
+            <div class="table-row-group">
+                <div class="table-row">
+                    <div class="table-cell bg-red-500">Cell 1 with more content</div>
+                    <div class="table-cell bg-red-300">Cell 2</div>
+                    <div class="table-cell bg-red-900">Cell 3</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell bg-red-300">Cell 2</div>
+                    <div class="table-cell bg-red-900">Cell 3 with more content</div>
+                    <div class="table-cell bg-red-500">Cell 1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario con Estilos de Tipografía</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+    </style>
+</head>
+<!--
+EN ESTE EJERCICIO PONEMOS EN PRÁCTICA LO QUE HEMOS IDO APRENDIENDO DE FORMA
+RECURSIVA, POR LO QUE CADA VEZ QUE APRENDEMOS ALGO NUEVO, SE INCLUYE CON LO
+ANTERIOR, HACIENDO EJERCICIOS CADA VEZ MÁS ELABORADOS.
+
+ELEMENTOS USADOS:
+
+- CONTAINERS, WIDTHS, MARGINS, PADDINGS
+- FONTS FAMILY, SIZING -> PARA TAMAÑOS DE LETRA, TIPOGRAFIAS Y FORMATOS
+- LEADING -> PARA LA SEPARACIÓN ENTRE ELEMENTOS
+- LISTAS
+- TRACKING -> PARA LA SEPARACIÓN DE LETRAS ENTRE LAS PALABRAS
+
+-->
+<body class="bg-gray-100 p-8">
+    <!--Contenedor principal-->
+    <div class="container mx-auto rounded-md shadow-lg p-8 max-w-2xl">
+        <!--Sección de título-->
+        <div class="text-center mb-8">
+            <h2 class="text-blue-700 font-bold font-sans text-4xl">Perfil de usuario</h2>
+            <p class="text-gray-500 font-serif text-lg">Detalles personales y preferencias</p>
+        </div>
+        <!--Sección de información personal-->
+        <div class="mb-8">
+            <h2 class="text-gray-800 font-mono text-2xl mb-4">Información Personal</h2>
+            <p class="font-light text-gray-700 leading-relaxed"><span class="font-semibold">Nombre:</span> Juan Pérez</p>
+            <p class="font-light text-gray-700 leading-relaxed"><span class="font-semibold">Correo electrónico:</span> juan.perez@example.com</p>
+            <p class="font-light text-gray-700 leading-relaxed"><span class="font-semibold">Biografía: </span><span class="italic">Desarrollador web apasionado por la tecnología y el diseño.</span></p>
+        </div>
+        <!--Sección de preferencias-->
+        <div class="mb-8">
+            <h2 class="text-gray-800 font-mono text-2xl mb-4">Preferencias</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li class="tracking-wide">Fuente favorita: <span class="underline">Poppins</span></li>
+                <li class="tracking-widest">Color favorito: <span class="text-red-500">Rojo</span></li>
+                <li class="tracking-tighter">TECNOLOGÍA FAVORITA: <span class="font-bold">TAILWIND CSS</span></li>
+            </ul>
+        </div>
+        <!--Sección de redes sociales-->
+        <div class="mb-8">
+            <h2 class="font-mono text-2xl text-gray-800 mb-4">Redes Sociales</h2>
+            <p class="text-gray-700">Sigue a Juan en:</p>
+            <ul class="list-none list-outside ml-4 mt-2">
+                <li class="text-blue-500 hover:underline">
+                    <a href="twitter.com">Twitter</a>
+                </li>
+                <li class="text-blue-700 hover:underline">
+                    <a href="linkedin.com">LinkedIn</a>
+                </li>
+                <li class="text-pink-500 hover:underline">
+                    <a href="instagram.com">Instagram</a>
+                </li>
+            </ul>
+        </div>
+        <!--Sección de comentarios recientes-->
+        <div class="mb-8">
+            <h2 class="font-mono text-2xl text-gray-800 mb-4">Comentarios recientes</h2>
+            <div class="bg-gray-200 rounded-lg p-4">
+                <p class="text-gray-600 text-justify">"Excelente trabajo en el último proyecto, Juan. <span class="text-red-500 font-bold">¡Sigue así!</span>"</p>
+                <p class="text-gray-600 text-right">- María Gómez</p>
+            </div>
+            <div class="bg-gray-200 rounded-lg p-4 mt-4">
+                <p class="text-gray-600 text-justify">"Me encantó tu artículo sobre <span class="text-blue-500 font-semibold">Tailwind CSS</span>. Muy informativo y bien estructurado."</p>
+                <p class="text-gray-600 text-right">- Carlos Rodríguez</p>
+            </div>
+        </div>
+        <!--Sección de derechos de autor-->
+        <div class="text-center mt-8">
+            <p class="font-sans text-sm text-gray-500">© 2024 Juan Pérez. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!--? Contenedor principal -->
+    <div class="container mx-auto py-4">
+        <!--? Contenedor de cubos grises -->
+        <div class="h-64 bg-slate-900 flex justify-center items-start space-x-4">
+            <!--? Cubo 1 CON SELF AUTO -->
+            <!--! Se alineará según la propiedad align-items del contenedor padre (en este caso, el valor predeterminado es items-start).-->
+            <div
+                class="bg-gray-400 h-20 w-20 flex items-center justify-center rounded-lg ring-2 ring-gray-500 text-xl font-medium self-auto">
+                1
+            </div>
+
+            <!--? Cubo 2 CON SELF-START -->
+            <!--! Se alinea al inicio del eje cruzado (parte superior del contenedor).-->
+            <div
+                class="bg-gray-400 h-20 w-20 flex items-center justify-center rounded-lg ring-2 ring-gray-500 text-xl font-medium self-start">
+                2
+            </div>
+
+            <!--? Cubo 3 CON SELF-CENTER -->
+            <!--! Se alinea en el centro del eje cruzado.-->
+            <div
+                class="bg-gray-400 h-20 w-20 flex items-center justify-center rounded-lg ring-2 ring-gray-500 text-xl font-medium self-center">
+                3
+            </div>
+
+            <!--? Cubo 4 CON SELF-END -->
+            <!--! Se alinea al final del eje cruzado (parte inferior del contenedor).-->
+            <div
+                class="bg-gray-400 h-20 w-20 flex items-center justify-center rounded-lg ring-2 ring-gray-500 text-xl font-medium self-end">
+                4
+            </div>
+
+            <!--? Cubo 5 CON SELF-STRETCH -->
+            <!--! Se estira para ocupar toda la altura disponible en el contenedor.-->
+            <div
+                class="bg-gray-400 w-20 flex items-center justify-center rounded-lg ring-2 ring-gray-500 text-xl font-medium self-stretch">
+                5
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

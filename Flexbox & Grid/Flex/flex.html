@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!--? Contenedor principal-->
+    <div class="container mx-auto m-4">
+        <!--? Contenedor de cubos CON FLEX-INITIAL-->
+        <h2 class="text-2xl font-thin pt-3 pb-3">Flex-None + Flex-Initial</h2>
+        <div class="bg-green-300/60 h-40 rounded-lg flex justify-center items-center mb-4 space-x-4 pl-4 pr-4">
+            <!--Cubo 1 CON FLEX-NONE-->
+            <div class="h-20 bg-green-800 text-white flex flex-none justify-center items-center rounded-lg w-14">
+                1
+            </div>
+            <!--Cubo 2 CON FLEX-INITIAL-->
+            <div class="h-20 bg-green-800 text-white flex flex-initial justify-center items-center rounded-lg w-64">
+                2
+            </div>
+            <!--Cubo 3 CON FLEX-INITIAL-->
+            <div class="h-20 bg-green-800 text-white flex flex-initial justify-center items-center rounded-lg w-32">
+                3
+            </div>
+        </div>
+
+        <!--? Contenedor de cubos CON FLEX-1-->
+        <h2 class="text-2xl font-thin pt-3 pb-3">Flex-None + Flex-1</h2>
+        <div class="bg-green-300/60 h-40 rounded-lg flex justify-center items-center space-x-4 pl-4 pr-4">
+            <!--Cubo 1 CON FLEX-NONE-->
+            <div class="h-20 bg-green-800 text-white flex flex-none justify-center items-center rounded-lg w-14">
+                1
+            </div>
+            <!--Cubo 2 CON FLEX-INITIAL-->
+            <div class="h-20 bg-green-800 text-white flex flex-1 justify-center items-center rounded-lg w-64">
+                2
+            </div>
+            <!--Cubo 3 CON FLEX-INITIAL-->
+            <div class="h-20 bg-green-800 text-white flex flex-1 justify-center items-center rounded-lg w-32">
+                3
+            </div>
+        </div>
+
+        <!--? Contenedor de cubos CON FLEX-AUTO-->
+        <h2 class="text-2xl font-thin pt-3 pb-3">Flex-None + Flex-Auto</h2>
+        <div class="bg-green-300/60 h-40 rounded-lg flex justify-center items-center space-x-4 pl-4 pr-4">
+            <!--Cubo 1 CON FLEX-NONE-->
+            <div class="h-20 bg-green-800 text-white flex flex-none justify-center items-center rounded-lg w-14">
+                1
+            </div>
+            <!--Cubo 2 CON FLEX-INITIAL-->
+            <div class="h-20 bg-green-800 text-white flex flex-auto justify-center items-center rounded-lg w-64">
+                2
+            </div>
+            <!--Cubo 3 CON FLEX-INITIAL-->
+            <div class="h-20 bg-green-800 text-white flex flex-auto justify-center items-center rounded-lg w-32">
+                3
+            </div>
+        </div>
+    </div>
+</body>
+</html>

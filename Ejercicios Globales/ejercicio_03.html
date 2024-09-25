@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Barra de navegación fija -->
+    <nav class="fixed top-0 left-0 right-0 bg-blue-600 text-white py-4 px-6 shadow-lg z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Mi Perfil</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:underline">Inicio</a></li>
+                <li><a href="#" class="hover:underline">Mensajes</a></li>
+                <li><a href="#" class="hover:underline">Amigos</a></li>
+                <li><a href="#" class="hover:underline">Configuración</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenedor Principal -->
+    <div class="container mx-auto pt-24 pb-8 px-6">
+        <div class="flex flex-wrap -mx-6">
+            <!-- Perfil de Usuario (fixed width) -->
+            <div class="w-full md:w-1/3 px-6">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="profile-bg.jpg" alt="Background" class="w-full h-32 object-cover">
+                    <div class="p-6 relative">
+                        <img src="../Layouts/Overflow/profile1.jpg" alt="User" class="w-24 h-24 rounded-full object-cover border-4 border-white absolute top-[-48px] left-6">
+                        <h2 class="mt-12 text-xl font-bold">Jane Doe</h2>
+                        <p class="text-gray-600">Desarrolladora Full Stack</p>
+                        <div class="mt-4">
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-full">Seguir</button>
+                            <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded-full ml-2">Mensaje</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Área de contenido -->
+            <div class="w-full md:w-2/3 px-6">
+                <!-- Biografía -->
+                <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+                    <h3 class="text-lg font-bold mb-4">Biografía</h3>
+                    <p class="text-gray-700">
+                        Jane es una desarrolladora apasionada por el código y la tecnología. Ha trabajado en diversos proyectos en
+                        las áreas de frontend, backend, y desarrollo móvil. Le encanta aprender cosas nuevas y compartir sus
+                        conocimientos con la comunidad.
+                    </p>
+                </div>
+
+                <!-- Amigos (Horizontal scroll) -->
+                <div class="bg-white rounded-lg shadow-lg p-6 mb-6 overflow-x-auto whitespace-nowrap">
+                    <h3 class="text-lg font-bold mb-4">Amigos</h3>
+                    <div class="flex space-x-4">
+                        <!-- Tarjeta de amigo 1 -->
+                        <div class="inline-block w-40">
+                            <img src="friend1.jpg" alt="Friend 1" class="w-full h-32 object-cover rounded-lg">
+                            <p class="text-center mt-2 text-gray-700">Alex Johnson</p>
+                        </div>
+                        <!-- Tarjeta de amigo 2 -->
+                        <div class="inline-block w-40">
+                            <img src="friend2.jpg" alt="Friend 2" class="w-full h-32 object-cover rounded-lg">
+                            <p class="text-center mt-2 text-gray-700">Emma Watson</p>
+                        </div>
+                        <!-- Tarjeta de amigo 3 -->
+                        <div class="inline-block w-40">
+                            <img src="friend3.jpg" alt="Friend 3" class="w-full h-32 object-cover rounded-lg">
+                            <p class="text-center mt-2 text-gray-700">Michael Smith</p>
+                        </div>
+                        <!-- Más amigos... -->
+                    </div>
+                </div>
+
+                <!-- Publicaciones (Vertical scroll) -->
+                <div class="bg-white rounded-lg shadow-lg p-6 overflow-y-auto h-96">
+                    <h3 class="text-lg font-bold mb-4">Publicaciones</h3>
+                    <!-- Publicación 1 -->
+                    <div class="mb-4">
+                        <h4 class="font-semibold">Proyecto de React</h4>
+                        <p class="text-gray-700">
+                            ¡Acabo de terminar mi último proyecto en React! Aprendí mucho sobre hooks, context y cómo manejar el
+                            estado de la aplicación.
+                        </p>
+                    </div>
+                    <!-- Publicación 2 -->
+                    <div class="mb-4">
+                        <h4 class="font-semibold">Conferencia de Tech</h4>
+                        <p class="text-gray-700">
+                            Ayer asistí a una increíble conferencia sobre el futuro de la inteligencia artificial. Muy inspirador
+                            escuchar a expertos en la materia.
+                        </p>
+                    </div>
+                    <!-- Más publicaciones... -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

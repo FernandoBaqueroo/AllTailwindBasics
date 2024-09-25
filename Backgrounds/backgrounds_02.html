@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículo con Imagen de Fondo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-8 bg-gray-100 font-sans">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2">
+        <!-- Tarjeta de Artículo -->
+        <div class="max-w-xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Imagen de fondo con texto centrado -->
+            <div class="bg-cover bg-center h-64 relative" style="background-image: url('montania.jpg');">
+                <div class="absolute inset-0 bg-black backdrop-blur-sm bg-opacity-40 flex items-center justify-center">
+                    <h2 class="text-white text-3xl font-bold">Explorando la Montaña</h2>
+                </div>
+            </div>
+            <!-- Contenido del artículo -->
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2 text-gray-800">La belleza natural de las alturas</h3>
+                <p class="text-gray-600 mb-4">
+                    Descubre los secretos escondidos en las montañas, donde la naturaleza muestra su lado más puro y
+                    desafiante.
+                </p>
+                <a href="#"
+                    class="inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-blue-700">
+                    Leer más
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Imagen de fondo con texto centrado -->
+            <div class="bg-cover bg-center h-64 relative" style="background-image: url('montania.jpg');">
+                <div class="absolute inset-0 bg-black backdrop-blur-sm bg-opacity-40 flex items-center justify-center">
+                    <h2 class="text-white text-3xl font-bold">Explorando la Montaña</h2>
+                </div>
+            </div>
+            <!-- Contenido del artículo -->
+            <div class="p-6">
+                <h3 class="text-2xl font-semibold mb-2 text-gray-800">La belleza natural de las alturas</h3>
+                <p class="text-gray-600 mb-4">
+                    Descubre los secretos escondidos en las montañas, donde la naturaleza muestra su lado más puro y
+                    desafiante.
+                </p>
+                <a href="#"
+                    class="inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300 ease-in-out hover:bg-blue-700">
+                    Leer más
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

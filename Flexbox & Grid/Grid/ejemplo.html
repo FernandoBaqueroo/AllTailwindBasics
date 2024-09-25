@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Web Complejo - Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <a href="#" class="text-2xl font-bold text-gray-800">MyBrand</a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#services" class="text-gray-600 hover:text-gray-800">Servicios</a></li>
+                <li><a href="#testimonials" class="text-gray-600 hover:text-gray-800">Testimonios</a></li>
+                <li><a href="#blog" class="text-gray-600 hover:text-gray-800">Blog</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-gray-800">Contacto</a></li>
+            </ul>
+            <button class="md:hidden text-gray-600 focus:outline-none">Menú</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen text-white" style="background-image: url('https://source.unsplash.com/1600x900/?nature');">
+        <div class="h-full bg-opacity-75 bg-gray-900 flex flex-col justify-center items-center text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold">Diseño Web Moderno y Creativo</h1>
+            <p class="mt-4 text-lg md:text-2xl">Creamos sitios web personalizados y adaptables a todas las plataformas</p>
+            <a href="#contact" class="mt-8 bg-teal-500 text-white py-2 px-6 rounded-full shadow-lg hover:bg-teal-600">Contáctanos</a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Nuestros Servicios</h2>
+            <p class="mt-4 text-gray-600">Ofrecemos una amplia gama de servicios para satisfacer tus necesidades digitales</p>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-8 shadow-lg rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-700">Diseño UX/UI</h3>
+                    <p class="mt-4 text-gray-600">Experiencia de usuario adaptada y diseños atractivos para tu web.</p>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="bg-white p-8 shadow-lg rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-700">Desarrollo Web</h3>
+                    <p class="mt-4 text-gray-600">Sitios web modernos y responsivos utilizando las últimas tecnologías.</p>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="bg-white p-8 shadow-lg rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-700">Optimización SEO</h3>
+                    <p class="mt-4 text-gray-600">Mejora tu presencia en los motores de búsqueda con nuestras técnicas avanzadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Testimonios de Clientes</h2>
+            <p class="mt-4 text-gray-600">Lo que nuestros clientes dicen de nosotros</p>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-gray-100 p-8 shadow-lg rounded-lg">
+                    <p class="text-gray-700">"Excelentes resultados, mi sitio web está optimizado y bien diseñado."</p>
+                    <h4 class="mt-4 font-bold text-gray-800">Juan Pérez</h4>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="bg-gray-100 p-8 shadow-lg rounded-lg">
+                    <p class="text-gray-700">"Un equipo creativo y profesional que entendió nuestras necesidades."</p>
+                    <h4 class="mt-4 font-bold text-gray-800">María Rodríguez</h4>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="bg-gray-100 p-8 shadow-lg rounded-lg">
+                    <p class="text-gray-700">"Increíble atención al detalle, el diseño es impecable."</p>
+                    <h4 class="mt-4 font-bold text-gray-800">Carlos Gómez</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Proyectos Recientes</h2>
+            <p class="mt-4 text-gray-600">Algunos de nuestros trabajos más recientes</p>
+
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Imágenes de galería -->
+                <img src="https://source.unsplash.com/400x300/?website" class="rounded-lg shadow-lg" alt="Project 1">
+                <img src="https://source.unsplash.com/400x300/?technology" class="rounded-lg shadow-lg" alt="Project 2">
+                <img src="https://source.unsplash.com/400x300/?design" class="rounded-lg shadow-lg" alt="Project 3">
+                <img src="https://source.unsplash.com/400x300/?business" class="rounded-lg shadow-lg" alt="Project 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Últimos Artículos</h2>
+            <p class="mt-4 text-gray-600">Explora nuestras publicaciones recientes en el blog</p>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Artículo 1 -->
+                <div class="bg-gray-100 p-8 shadow-lg rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-700">Tendencias en Diseño Web 2024</h3>
+                    <p class="mt-4 text-gray-600">Descubre las últimas tendencias que dominarán el diseño web este año.</p>
+                    <a href="#" class="mt-4 inline-block text-teal-500">Leer más</a>
+                </div>
+                <!-- Artículo 2 -->
+                <div class="bg-gray-100 p-8 shadow-lg rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-700">Mejores Prácticas de SEO</h3>
+                    <p class="mt-4 text-gray-600">Optimiza tu sitio web para motores de búsqueda con estas estrategias clave.</p>
+                    <a href="#" class="mt-4 inline-block text-teal-500">Leer más</a>
+                </div>
+                <!-- Artículo 3 -->
+                <div class="bg-gray-100 p-8 shadow-lg rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-700">Diseño Adaptativo para Móviles</h3>
+                    <p class="mt-4 text-gray-600">Aprende a crear sitios web que se vean increíbles en cualquier dispositivo.</p>
+                    <a href="#" class="mt-4 inline-block text-teal-500">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800">Contáctanos</h2>
+            <p class="mt-4 text-gray-600">Estamos aquí para ayudarte, envíanos un mensaje.</p>
+
+            <div class="mt-12 max-w-lg mx-auto">
+                <form class="bg-white p-8 shadow-lg rounded-lg">
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Nombre</label>
+                        <input type="text" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-teal-200 focus:outline-none">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Email</label>
+                        <input type="email" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-teal-200 focus:outline-none">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700">Mensaje</label>
+                        <textarea class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-teal-200 focus:outline-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-teal-500 text-white py-2 rounded-lg hover:bg-teal-600">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400">&copy; 2024 MyBrand. Todos los derechos reservados.</p>
+            <ul class="flex justify-center space-x-4 mt-4">
+                <li><a href="#" class="text-gray-400 hover:text-white">Facebook</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Twitter</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-white">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

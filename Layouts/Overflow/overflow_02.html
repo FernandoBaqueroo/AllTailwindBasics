@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts con Columns</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos para barra de desplazamiento personalizada */
+        /* Para navegadores basados en WebKit */
+        .scrollable::-webkit-scrollbar {
+            width: 8px; /* Ancho de la barra de desplazamiento */
+        }
+
+        .scrollable::-webkit-scrollbar-track {
+            background: #f0f0f0; /* Color de la pista de desplazamiento */
+            border-radius: 10px;
+        }
+
+        .scrollable::-webkit-scrollbar-thumb {
+            background: #888; /* Color del pulgar de la barra de desplazamiento */
+            border-radius: 10px;
+        }
+
+        .scrollable::-webkit-scrollbar-thumb:hover {
+            background: #555; /* Color del pulgar de la barra de desplazamiento al pasar el cursor */
+        }
+
+        /* Para Firefox */
+        .scrollable {
+            scrollbar-width: thin; /* Ancho de la barra de desplazamiento */
+            scrollbar-color: #888 #f0f0f0; /* Color del pulgar y de la pista */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-4">
+        <!-- Contenedor scrolleable con clase adicional -->
+        <div class="w-96 h-80 shadow-xl overflow-auto rounded-lg bg-white scrollable">
+            <!-- Perfil 1 -->
+            <div class="w-full h-20 overflow-hidden flex border-b">
+                <div class="w-20 h-full">
+                    <img src="profile1.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-full ml-3 mt-1">
+                    <h2 class="text-lg font-semibold font-sans">Juanito Gominola</h2>
+                    <p class="text-sm text-gray-500">Desarrollador Full Stack MERN</p>
+                </div>
+            </div>
+
+            <!-- Perfil 2 -->
+            <div class="w-full h-20 overflow-hidden flex border-b">
+                <div class="w-20 h-full">
+                    <img src="profile2.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-full ml-3 mt-1">
+                    <h2 class="text-lg font-semibold font-sans">Arthuro García</h2>
+                    <p class="text-sm text-gray-500">Especialista en UX/UI</p>
+                </div>
+            </div>
+
+            <!-- Perfil 3 -->
+            <div class="w-full h-20 overflow-hidden flex border-b">
+                <div class="w-20 h-full">
+                    <img src="profile3.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-full ml-3 mt-1">
+                    <h2 class="text-lg font-semibold font-sans">Pedro Fernández</h2>
+                    <p class="text-sm text-gray-500">Analista de Datos</p>
+                </div>
+            </div>
+
+            <!-- Perfil 4 -->
+            <div class="w-full h-20 overflow-hidden flex border-b">
+                <div class="w-20 h-full">
+                    <img src="profile4.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-full ml-3 mt-1">
+                    <h2 class="text-lg font-semibold font-sans">Laura Martínez</h2>
+                    <p class="text-sm text-gray-500">Ingeniera DevOps</p>
+                </div>
+            </div>
+
+            <!-- Perfil 5 -->
+            <div class="w-full h-20 overflow-hidden flex">
+                <div class="w-20 h-full">
+                    <img src="profile5.jpg" class="w-full h-full object-cover">
+                </div>
+                <div class="h-full ml-3 mt-1">
+                    <h2 class="text-lg font-semibold font-sans">Carlos López</h2>
+                    <p class="text-sm text-gray-500">Diseñador Gráfico</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

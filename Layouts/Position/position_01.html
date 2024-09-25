@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts con Positions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-10">
+
+        <!--Posicionamiento-->
+
+        <!--Si no estuviese el relative, el cuadrado no respetaria al contenedor y se saldria-->
+        <div class="bg-blue-300 mx-auto w-6/12 h-96 relative">
+            <div class="bg-blue-500 w-20 h-20 absolute top-0"></div>
+        </div>
+    </div>
+</body>
+</html>
