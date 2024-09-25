@@ -1,30 +1,29 @@
 # AllTailwindBasics
 
-Este repositorio incluye una serie de ejercicios prácticos que demuestran el uso de una amplia variedad de clases de **TailwindCSS**.
+This repository includes a series of practical exercises that demonstrate the use of a wide variety of **TailwindCSS** classes.
 
-## Descripción
+## Description
 
-Dentro de **AllTailwindBasics**, encontrarás ejemplos detallados para la mayoría de las clases de TailwindCSS, organizados de forma clara y sencilla para facilitar su comprensión. Cada ejemplo está diseñado para mostrar cómo se aplican las clases en diferentes situaciones, permitiéndote entender mejor sus usos y efectos visuales.
+Inside **AllTailwindBasics**, you will find detailed examples for most of the TailwindCSS classes, organized clearly and simply to facilitate understanding. Each example is designed to show how the classes are applied in different scenarios, allowing you to better understand their usage and visual effects.
 
-## Estructura
+## Structure
 
-- Cada archivo dentro de la carpeta aborda un conjunto específico de clases de TailwindCSS.
-- Se incluyen ejemplos para clases de diseño, espaciado, colores, tipografía, flexbox, grid, y más.
-- Los ejercicios están pensados para ser fácilmente ejecutables y visualizados en cualquier navegador.
+- Each file within the folder addresses a specific set of TailwindCSS classes.
+- Examples are included for design, spacing, colors, typography, flexbox, grid, and more.
+- The exercises are designed to be easily executable and viewable in any browser.
 
-## ¿Cómo usarlo?
+## How to Use
 
-1. Clona el repositorio en tu máquina local.
-2. Navega a la carpeta **AllTailwindBasics**.
-3. Abre los archivos HTML en tu navegador para ver los ejemplos en acción.
+1. Clone the repository to your local machine.
+2. Navigate to the **AllTailwindBasics** folder.
+3. Open the HTML files in your browser to see the examples in action.
 
-## Contribuciones
+## Contributions
 
-Si deseas mejorar los ejemplos o agregar nuevos ejercicios, siéntete libre de hacer un *fork* del repositorio y enviar un *pull request* con tus contribuciones.
+If you want to improve the examples or add new exercises, feel free to fork the repository and submit a pull request with your contributions.
 
-## Licencia
+## License
 
-Este proyecto está bajo la licencia MIT.
+This project is licensed under the MIT License.
 
 ---
-
