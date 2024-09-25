@@ -1,7 +1,6 @@
 # AllTailwindBasics
-# AllTailwindBasics
 
-Este repositorio contiene una carpeta llamada **AllTailwindBasics**, la cual incluye una serie de ejercicios prácticos que demuestran el uso de una amplia variedad de clases de **TailwindCSS**.
+Este repositorio incluye una serie de ejercicios prácticos que demuestran el uso de una amplia variedad de clases de **TailwindCSS**.
 
 ## Descripción
 
